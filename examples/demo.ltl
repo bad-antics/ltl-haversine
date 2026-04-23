@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_haversine
+
+import std::io
+use ltl_haversine as lib
+
+fn main() {
+    io::println("ltl_haversine demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
